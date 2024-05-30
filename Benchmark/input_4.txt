@@ -1,0 +1,12 @@
+Initial_state 0 Bound 5 delta_value 10 observable={o1,o2,o3,o4} unobservable={un1} fault={f} clock={c1} 
+0 o1 0 c1>=1 c1
+0 o2 1 c1>=2 c1
+1 o2 1 5>=c1 0
+1 f 2 c1>=3 c1
+1 un1 3 c1>=3 c1
+2 o3 2 10>=c1 c1
+2 o3 3 20>=c1 0
+3 o4 3 15>=c1 0
+3 o1 0 c1>15 0
+
+invariant:

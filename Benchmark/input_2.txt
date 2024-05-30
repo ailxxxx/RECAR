@@ -1,0 +1,13 @@
+Initial_state 0 Bound 6 delta_value 7 observable={o1,o2} unobservable={un1} fault={f} clock={c1} 
+0 o1 1 c1>1 c1
+1 o2 2 c1>2 c1
+2 f 4 c1>1 0
+1 un1 3 c1>1 0
+4 o1 6 2>c1 c1
+3 o2 5 c1>2 c1
+6 o1 6 c1>2 c1
+5 o1 5 c1>2 c1
+
+invariant:
+6 3>=c1
+5 3>=c1
